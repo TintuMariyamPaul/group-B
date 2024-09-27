@@ -1,4 +1,4 @@
-alert(load a euler JSON
-    a = 3;
-    b = 5;
-    n = 1000;)
+alertalert("Loaded Euler JS");
+a=3;
+b=5;
+n=1000;
