@@ -35,3 +35,20 @@ function sumOfMultiples(a,b,n){
         return sum
     }
 }
+
+function calculate(){
+    const a = document.getElementById("a").value
+    const b = document.getElementById("b").value
+    const n = document.getElementById("n").value
+
+
+    let result =  sumOfMultiples(a,b,n)
+
+    alert("The answer"+ result)
+    //alert("The answer is ${result")
+}
+
+<form id="">
+    <label >
+        <input type="number"> </input>
+</form>
