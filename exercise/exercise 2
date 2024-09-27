@@ -7,16 +7,16 @@
                     if (i%3 == 0 || i%5 == 0)
                     sum = sum+1;
 
+                    alert("The answer is ${sum}")
+
                 }
-                                        
-            document.getElementById('input').innerText= "the total sum of multiple of 3 and 5 below 1000 is:"+sum;
         
     
         }    
         </script>
     </head>
-    <body>
-        <input type="number" id="input">
-        <button onclick="cal()">click me</button>
-    </body>
+        <body>
+           <input type="number" id="input">
+           <button onclick="cal()">click me</button>
+        </body>
 </html>
