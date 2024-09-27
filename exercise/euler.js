@@ -16,7 +16,7 @@ b=5;
 n=1000;
 
 
-function cal(){
+function sumOfMultiplesOfThreeAndFiveLessThanAThousand(){
     let sum = 0;
     for ( let i = 0; i<1000; i++){
         if (i%3 == 0 || i%5 == 0)
@@ -24,4 +24,14 @@ function cal(){
     }
     
     alert("The answer is" + sum)
+}
+
+function sumOfMultiples(a,b,n){
+    let sum = 0;
+    for(let i=0; i<n; i++){
+        if(a%n == 0 || b%n == 0){
+            sum += i
+        }
+        return sum
+    }
 }
