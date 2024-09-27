@@ -45,10 +45,5 @@ function calculate(){
     let result =  sumOfMultiples(a,b,n)
 
     alert("The answer"+ result)
-    //alert("The answer is ${result")
+    
 }
-
-<form id="">
-    <label >
-        <input type="number"> </input>
-</form>
