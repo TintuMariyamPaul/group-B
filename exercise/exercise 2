@@ -1,23 +1,23 @@
 <html>
     <head>
         <script>
-            let doIt=()=> {
-                inputText=document.getElementById("userInput").value;
-                
-                sum=0
-                for i in Range(1, 1000)
-                    if (i%3==0 or i%5==0)
-                    {
-                        sum+=i
-                    }
-            
+            function cal(){
+                let sum=0
+                for ( let i=0; i<=1000; i++){
+                    if (i%3 == 0 || i%5 == 0)
+                    sum +=i;
+
+                }
+            }                    
+                    
+            document.getElementById('input').innerText= "the sum of multiple of 3 and 5 below 1000 is:"+sum;
         
-    }     
+        }
              
         </script>
     </head>
     <body>
-        <input type="number" id="userInput">
-        <button onclick="doIt()">click me</button>
+        <input type="number" id="input">
+        <button onclick="cal()">click me</button>
     </body>
 </html>
