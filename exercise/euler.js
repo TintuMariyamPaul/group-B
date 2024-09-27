@@ -23,3 +23,4 @@ function cal(){
         sum = sum+1;
     }
     alert("The answer is ${sum}")
+}
