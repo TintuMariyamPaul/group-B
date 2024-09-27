@@ -37,9 +37,9 @@ function sumOfMultiples(a,b,n){
 }
 
 function calculate(){
-    const a = document.getElementById("a").value
-    const b = document.getElementById("b").value
-    const n = document.getElementById("n").value
+    const a = document.getElementById('a').value
+    const b = document.getElementById('b').value
+    const n = document.getElementById('n').value
 
 
     let result =  sumOfMultiples(a,b,n)
