@@ -12,8 +12,8 @@
                     
             document.getElementById('input').innerText= "the sum of multiple of 3 and 5 below 1000 is:"+sum;
         
-        }
-             
+    
+        }    
         </script>
     </head>
     <body>
