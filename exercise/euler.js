@@ -22,5 +22,6 @@ function cal(){
         if (i%3 == 0 || i%5 == 0)
         sum = sum+1;
     }
+    
     alert("The answer is" + sum)
 }
