@@ -9,7 +9,7 @@
 
                 }
                                         
-            document.getElementById('input').innerText= "the sum of multiple of 3 and 5 below 1000 is:"+sum;
+            document.getElementById('input').innerText= "the total sum of multiple of 3 and 5 below 1000 is:"+sum;
         
     
         }    
