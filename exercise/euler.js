@@ -19,10 +19,11 @@ n=1000;
 function sumOfMultiplesOfThreeAndFiveLessThanAThousand(){
     let sum = 0;
     for ( let i = 0; i<1000; i++){
-        if (i%3 == 0 || i%5 == 0)
-        sum = sum+1;
-    }
-    
+        if (i%3 == 0 || i%5 == 0){
+            sum = sum+1;
+
+        }
+       }
     alert("The answer is" + sum)
 }
 
@@ -32,8 +33,8 @@ function sumOfMultiples(a,b,n){
         if(a%n == 0 || b%n == 0){
             sum += i
         }
-        return sum
     }
+    return sum;
 }
 
 function calculate(){
@@ -42,8 +43,9 @@ function calculate(){
     const n = document.getElementById('n').value
 
 
-    let result =  sumOfMultiples(a,b,n)
+    const result =  sumOfMultiples(a,b,n)
 
-    alert("The answer"+ result)
+    alert(`The sum of multiples of ${a} or ${b} below ${n} is: ${result}`);
+}
     
 }
