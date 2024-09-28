@@ -10,27 +10,17 @@ The sum of these multiples is 23.
 3. Allow the user to enter the parameters via text box(es)
 and alert them to the output
 */
+
 alert("Loaded Euler JS");
 a=3;
 b=5;
 n=1000;
 
 
-function sumOfMultiplesOfThreeAndFiveLessThanAThousand(){
-    let sum = 0;
-    for ( let i = 0; i<1000; i++){
-        if (i%3 == 0 || i%5 == 0){
-            sum = sum+1;
-
-        }
-       }
-    alert("The answer is" + sum)
-}
-
 function sumOfMultiples(a,b,n){
     let sum = 0;
-    for(let i=0; i<n; i++){
-        if(a%n == 0 || b%n == 0){
+    for(let i=1; i<n; i++){
+        if(i % a == 0 || i % b == 0){
             sum += i
         }
     }
