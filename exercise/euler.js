@@ -45,7 +45,6 @@ function calculate(){
 
     const result =  sumOfMultiples(a,b,n)
 
-    alert(`The sum of multiples of ${a} or ${b} below ${n} is: ${result}`);
+    alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
 }
     
-}
