@@ -28,12 +28,12 @@ function sumOfMultiples(a,b,n){
 }
 
 function calculate(){
-    const a = document.getElementById('a').value
-    const b = document.getElementById('b').value
-    const n = document.getElementById('n').value
+    const a = parseInt(document.getElementById('a').value);
+    const b = parseInt(document.getElementById('b').value);
+    const n = parseInt(document.getElementById('n').value);
 
 
-    const result =  sumOfMultiples(a,b,n)
+    const result =  sumOfMultiples(a,b,n);
 
     alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
 }
