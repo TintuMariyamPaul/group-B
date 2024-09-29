@@ -16,7 +16,7 @@ a=3;
 b=5;
 n=1000;
 
-function sumOfMultiples(a,b,n){
+function sumOfMult(a,b,n){
     let sum = 0;
     for(let i=1; i<n; i++){
         if(i % a == 0 || i % b == 0){
@@ -32,7 +32,7 @@ function calculate(){
     const n = parseInt(document.getElementById('n').value);
 
 
-    const result =  sumOfMultiples(a,b,n);
+    const result =  sumOfMult(a,b,n);
 
     alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
 }
