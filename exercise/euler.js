@@ -26,7 +26,7 @@ function sumOfMult(a,b,n){
     return sum;
 }
 
-function calculate(){
+function cal(){
     const a = parseInt(document.getElementById('a').value);
     const b = parseInt(document.getElementById('b').value);
     const n = parseInt(document.getElementById('n').value);
