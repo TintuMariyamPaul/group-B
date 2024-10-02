@@ -33,6 +33,13 @@ function cal(){
 
 
     const result =  sumOfMult(a,b,n);
+    const resultDivision = document.getElementById('result');
+    resultDivision.textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
+
+    document.getElementById('a').style.display = 'none';
+    document.getElementById('b').style.display = 'none';
+    document.getElementById('n').style.display = 'none';
+    document.getElementById('clickbutton').style.display = 'none';
 
     alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
 }
