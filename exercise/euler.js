@@ -43,10 +43,17 @@ function cal(){
     document.getElementById('b').style.display = 'none';
     document.getElementById('n').style.display = 'none';
     document.getElementById('clickbutton').style.display = 'none';
-      
-    
+    document.getElementById('result').style.display = 'none';
 
     alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
-  
 }
+function show(){
+        document.getElementById('a').style.display = 'block';
+        document.getElementById('b').style.display = 'block';
+        document.getElementById('c').style.display = 'block';
+        document.getElementById('clickbutton').style.display = 'block';
+        document.getElementById('result').style.display = 'none'
+    }
+    
+    
     
