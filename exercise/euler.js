@@ -9,6 +9,9 @@ The sum of these multiples is 23.
 
 3. Allow the user to enter the parameters via text box(es)
 and alert them to the output
+
+Demonstrate some DOM manipulation in the exercise.
+for example changing the value of a result div, hiding inputs once the button is clicked ...
 */
 
 alert("Loaded Euler JS");
@@ -33,8 +36,8 @@ function cal(){
 
 
     const result =  sumOfMult(a,b,n);
-    const resultDivision = document.getElementById('result');
-    resultDivision.textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
+    const Div = document.getElementById('result');
+    Div.textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
 
     document.getElementById('a').style.display = 'none';
     document.getElementById('b').style.display = 'none';
