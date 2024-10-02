@@ -36,7 +36,7 @@ function cal(){
 
 
     const result =  sumOfMult(a,b,n);
-    const Div = document.getElementById('result');
+    const Div = document.getElementById('result'); 
     
     document.getElementById('a').style.display = 'none';
     document.getElementById('b').style.display = 'none';
