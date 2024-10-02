@@ -14,6 +14,7 @@ Demonstrate some DOM manipulation in the exercise.
 for example changing the value of a result div, hiding inputs once the button is clicked ...
 */
 
+
 alert("Loaded Euler JS");
 a=3;
 b=5;
@@ -37,8 +38,6 @@ function cal(){
 
     const result =  sumOfMult(a,b,n);
     const Div = document.getElementById('result');
-    Div.textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
-    
     
     document.getElementById('a').style.display = 'none';
     document.getElementById('b').style.display = 'none';
