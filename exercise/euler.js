@@ -38,11 +38,19 @@ function cal(){
     const result =  sumOfMult(a,b,n);
     const Div = document.getElementById('result');
     Div.textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
-
+    
+    
     document.getElementById('a').style.display = 'none';
     document.getElementById('b').style.display = 'none';
     document.getElementById('n').style.display = 'none';
     document.getElementById('clickbutton').style.display = 'none';
+    
+    const showButton = document.getElementById('showButton');
+    showButton.addEventListener('click', () => {
+        document.getElementById('a').style.display = 'block';
+        document.getElementById('b').style.display = 'block';
+        document.getElementById('n').style.display = 'block';   
+    
 
     alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
 
