@@ -53,6 +53,6 @@ function cal(){
     
 
     alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
-
+    }
 }
     
