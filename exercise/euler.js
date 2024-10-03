@@ -40,6 +40,22 @@ function cal(){
 
     
      alert('The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}');
+
+     const resultDiv = document.getElementById('result');
+     resultDiv.textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
     
+     document.getElementById('a').style.display = 'none';
+     document.getElementById('b').style.display = 'none';
+     document.getElementById('n').style.display = 'none';
+     document.getElementById('calculateButton').style.display = 'none';
+     document.getElementById('result').style.display = 'block';
+}
+function showInput() {
+    
+    document.getElementById('a').style.display = 'block';
+    document.getElementById('b').style.display = 'block';
+    document.getElementById('n').style.display = 'block';
+    document.getElementById('calculateButton').style.display = 'block';
+    document.getElementById('result').style.display = 'none';
 }
     
