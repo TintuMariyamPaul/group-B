@@ -36,8 +36,10 @@ function cal(){
     const n = parseInt(document.getElementById('n').value);
 
     const result = sumOfMult(a,b,n);
+    document.getElementById('result').textContent = `The sum of multiples of ${a} or ${b} below ${n} is: ${result}`;
+
     
-    alert('The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}');
+     alert('The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}');
     
 }
     
