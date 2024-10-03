@@ -20,37 +20,45 @@ a=3;
 b=5;
 n=1000;
 
-function sum(a,b,n){
+function sumOfMult(a, b, n) {
     let s = 0;
-    for(let i=1; i<n; i++){
-        if(i % a == 0 || i % b == 0){
+    for (let i = 1; i < n; i++) {
+        if (i % a === 0 || i % b === 0) {
             s += i;
         }
     }
-    alert("sum ="+s);
+    return s;
 }
 
-function cal(){
+function calculate() {
     const a = parseInt(document.getElementById('a').value);
     const b = parseInt(document.getElementById('b').value);
-    const n = parseInt(document.getElementById('n').value); 
+    const n = parseInt(document.getElementById('n').value);
+
+
+    const result = sumOfMult(a, b, n);
+
+    document.getElementById('result').textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
+
     document.getElementById('a').style.display = 'none';
     document.getElementById('b').style.display = 'none';
     document.getElementById('n').style.display = 'none';
-    document.getElementById('sum').style.display = 'none';
+    document.getElementById('calculateButton').style.display = 'none';
+    document.getElementById('sum').style.display = 'block';
     document.getElementById('label1').style.display = 'none';
-    document.getElementById('label2').style.display = 'none'
-    document.getElementById('label3').style.display = 'none'
-    sumOfMult(a,b,n);
+    document.getElementById('label2').style.display = 'none'; 
+    document.getElementById('label3').style.display = 'none';
 }
+
 function showInput() {
-    
     document.getElementById('a').style.display = 'block';
     document.getElementById('b').style.display = 'block';
     document.getElementById('n').style.display = 'block';
-    document.getElementById('sum').style.display = 'block';
+    document.getElementById('sum').style.display = 'none';
     document.getElementById('label1').style.display = 'block';
     document.getElementById('label2').style.display = 'block';
-    document.getElementById('label3').style.display = 'block';
+    document.getElementById('label3').style.display = 'block';   
+
 }
+
     
