@@ -37,7 +37,7 @@ function cal(){
 
     const result = sumOfMult(a,b,n);
     
-    alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
+    alert('The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}');
     
 }
     
