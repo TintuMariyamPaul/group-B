@@ -39,6 +39,7 @@ function calculate() {
     const result = sumOfMult(a, b, n);
 
     document.getElementById('result').textContent = `The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`;
+    alert("The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}" );
 
     document.getElementById('a').style.display = 'none';
     document.getElementById('b').style.display = 'none';
