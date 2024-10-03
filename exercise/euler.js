@@ -34,31 +34,10 @@ function cal(){
     const a = parseInt(document.getElementById('a').value);
     const b = parseInt(document.getElementById('b').value);
     const n = parseInt(document.getElementById('n').value);
+
+    const result = sumOfMult(a,b,n);
+    
     alert(`The sum of multiples of numbers ${a} or ${b} below ${n} is: ${result}`);
-
-    if (isNaN(a) || isNaN(b) || isNaN(n)) {
-        alert('Please enter valid numbers for a, b, and n');
-        return;
-    }
-    const result = sumOfMult(a, b, n);
-    const resultDiv = document.getElementById('result');
-    resultDiv.textContent = `The sum of multiples of ${a} or ${b} below ${n} is: ${result}`;
-    resultDiv.style.display = 'block';
     
-    document.getElementById('a').style.display = 'none';
-    document.getElementById('b').style.display = 'none';
-    document.getElementById('n').style.display = 'none';
-    document.getElementById('clickbutton').style.display = 'none';
-   
-
 }
- 
-function showForm() {
-    document.getElementById('a').style.display = 'block';
-    document.getElementById('b').style.display = 'block';
-    document.getElementById('n').style.display = 'block';
-    document.getElementById('calculateButton').style.display = 'block';
-    document.getElementById('result').style.display = 'none';
     
-} 
-showForm();
