@@ -58,7 +58,7 @@ function showInput() {
     document.getElementById('sum').style.display = 'none';
     document.getElementById('label1').style.display = 'block';
     document.getElementById('label2').style.display = 'block';
-    document.getElementById('label3').style.display = 'block';   
+    document.getElementById('label3').style.display = 'block';
 
 }
 
