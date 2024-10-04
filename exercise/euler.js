@@ -45,7 +45,7 @@ function calculate() {
   document.getElementById('n').style.display = 'none';
   document.getElementById('calculateButton').style.display = 'none';
   document.getElementById('sum').style.display = 'block';
-  document.getElementById('label1').style.display = 'none';
+  document.getElementById('label').style.display = 'none';
   document.getElementById('label2').style.display = 'none';
   document.getElementById('label3').style.display = 'none';
 }
