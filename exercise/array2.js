@@ -13,8 +13,8 @@
   }
   
   function calculateSum() {
-    const aInput = document.getElementById("a-input").value;
-    const lInput = document.getElementById("l-input").value;
+    const aInput = document.getElementById("aInput").value;
+    const lInput = document.getElementById("lInput").value;
 
     const a = aInput.split(",").map(Number);
     const l = lInput.split(",").map(Number);
