@@ -1,15 +1,20 @@
-function arr(a,b,1){
-let sum = 0;
-for(let i of 1){
-    if ( i % a === 0 || i % b === 0) {
-        sum += i;
-      }
+function sumMultiples(a, b, l) {
+  let sum = 0;
+  for (let num of l) {
+    if (num % a === 0 || num % b === 0) {
+      sum += num;
     }
-    return sum;
+  }
+  return sum;
 }
-const a = 3;
-const b = 5;
-const 1 = [1,2,3,4,5,6,7,8,9,10];
-const result = arr(a,b,1);
-console.log(result);
 
+function calculateSum() {
+  const a = parseInt(document.getElementById("a").value);
+  const b = parseInt(document.getElementById("b").value);   
+
+  const listInput = document.getElementById("list").value;
+  const l = listInput.split(",").map(Number);
+
+  const result = sumMultiples(a, b, l);
+  document.getElementById("result").textContent = `The sum of multiples of ${a} or ${b} in the list is: ${result}`;
+}
