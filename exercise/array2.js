@@ -3,7 +3,7 @@
     let sum = 0;
     for (let j of l) {
       for (let n of a) {
-        if (num % n === 0) {
+        if (j % n === 0) {
           sum += j;
           break; 
         }
