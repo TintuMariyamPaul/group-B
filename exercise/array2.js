@@ -21,3 +21,4 @@
 
     const result = sumMultiplesOfElements(a, l);
     document.getElementById("result").textContent = `The sum of multiples of elements in a from the list l is: ${result}`;
+  }
