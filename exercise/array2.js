@@ -4,13 +4,13 @@ let a = [2,3];
 
 
 function sumMultiples(a, l) {
-  let sum = 0;
-  for (let num of l) {
-    if (num % a[0] === 0 || num % a[1] === 0) {
-      sum += num;
-    }
-  }
-  return sum;
+  return l.reduce((sum, num) => {
+      if (num % a[0] === 0 || num % a[1] === 0) {
+          return sum + num;
+      }
+      return sum;
+  }, 0);
+
 }
 
 let result = sumMultiples(a,1);
