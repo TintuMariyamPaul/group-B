@@ -1,24 +1,17 @@
 
-  function sumMultiplesOfElements(a, l) {
-    let sum = 0;
-    for (let j of l) {
-      for (let n of a) {
-        if (j % n === 0) {
-          sum += j;
-          break; 
-        }
-      }
+let l = [1,2,3,4,5,6,7,8,9,10];
+let a = [2,3];
+
+
+function sumMultiples(a, l) {
+  let sum = 0;
+  for (let num of l) {
+    if (num % a[0] === 0 || num % a[1] === 0) {
+      sum += num;
     }
-    return sum;
   }
-  
-  function calculateSum() {
-    const aInput = document.getElementById("a-Input").value;
-    const lInput = document.getElementById("l-Input").value;
+  return sum;
+}
 
-    const a = aInput.split(",").map(Number);
-    const l = lInput.split(",").map(Number);
-
-    const result = sumMultiplesOfElements(a, l);
-    document.getElementById("result").textContent = `The sum of multiples of elements in a from the list l is: ${result}`;
-  }
+let result = sumMultiples(a,1);
+alert(`The sum of multiples of numbers ${a} in the list ${l} is: ${result}`);
