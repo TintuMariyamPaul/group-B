@@ -11,5 +11,5 @@ function sumMultiples(a, b, l) {
     }, 0);
 }
 
-let result = sumMultiples(a,b,1);
+let result = sumMultiples(a,b,l);
 alert('The sum of multiples of numbers ${a} or ${b} is: ${result}');
