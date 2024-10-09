@@ -3,7 +3,7 @@ let a = 2;
 let b = 3;
 
 function sumMultiples(a, b, l) {
-    return l.reduce((sum,num) => {
+    return l.reduce((sum, num) => {
        if (num % a === 0 || num % b === 0) {
            return sum + num;
         }
