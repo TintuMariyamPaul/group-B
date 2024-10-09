@@ -14,4 +14,4 @@ function sumMultiples(a, l) {
 }
 
 let result = sumMultiples(a,l);
-console.log(`The sum of multiples of ${a[0]} or ${a[l]} in the list is: ${result}`);
+alert(`The sum of multiples of ${a[0]} or ${a[l]} in the list is: ${result}`);
