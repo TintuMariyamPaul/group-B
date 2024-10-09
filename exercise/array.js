@@ -12,4 +12,4 @@ function sumMultiples(a, b, l) {
 }
 
 let result = sumMultiples(a,b,l);
-alert('The sum of multiples of numbers ${a} or ${b} is: ${result}');
+alert(`The sum of multiples of numbers ${a} or ${b} is: ${result}`);
