@@ -3,12 +3,12 @@ let a = 2;
 let b = 3;
 
 function sumMultiples(a, b, l) {
-  return l.reduce((sum,num) => {
-    if (num % a === 0 || num % b === 0) {
-      return sum + num;
-    }
-    return sum;
-}, 0);
+    return l.reduce((sum,num) => {
+       if (num % a === 0 || num % b === 0) {
+           return sum + num;
+        }
+        return sum;
+    }, 0);
 }
 
 let result = sumMultiples(a,b,1);
