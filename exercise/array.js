@@ -3,14 +3,13 @@ let a = 2;
 let b = 3;
 
 function sumMultiples(a, b, l) {
-  let sum = 0;
-  for (let num of l) {
+  return l.reduce((sum,num) => {
     if (num % a === 0 || num % b === 0) {
-      sum += num;
+      return sum + num;
     }
-  }
-  return sum;
+    return sum;
+}, 0);
 }
 
 let result = sumMultiples(a,b,1);
-alert(`The sum of multiples of numbers ${a} or ${b} below ${l} is: ${result}`);
+alert(`The sum of multiples of numbers "+ a + " or " + b + " is: " + result + "`);
