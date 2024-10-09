@@ -13,5 +13,5 @@ function sumMultiples(a, l) {
 
 }
 
-let result = sumMultiples(a,1);
-console.log(`The sum of multiples of numbers ${a} in the list ${l} is: ${result}`);
+let result = sumMultiples(a,l);
+console.log(`The sum of multiples of ${a[0]} or ${a[1]} in the list is: ${result}`);
