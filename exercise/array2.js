@@ -5,7 +5,7 @@ let a = [2,3];
 
 function sumMultiples(a, l) {
   return l.reduce((sum, num) => {
-      if (num % a[0] === 0 || num % a[l] === 0) {
+      if (num % a[0] === 0 || num % a[1] === 0) {
           return sum + num;
       }
       return sum;
