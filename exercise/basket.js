@@ -1,4 +1,4 @@
-let a = (basket,prices)=>{
+let a = (basket,prices) =>{
    let calculateTotalCost = 0;
    for(let item in basket){
     if(prices[item] != undefined){
