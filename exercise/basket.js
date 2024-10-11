@@ -1,6 +1,6 @@
 let a = (basket,prices)=>{
    let calculateTotalCost = 0;
-   For(let item in basket){
+   for(let item in basket){
     if(prices[item] != undefined){
         calculateTotalCost += basket[item]*prices[item];
     }
