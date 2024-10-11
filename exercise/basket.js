@@ -8,5 +8,5 @@ let a = (basket,prices) =>{
    return calculateTotalCost;
 }
 basket = {orange:1, apple:5, grapes:3};
-prices = {orange:1.02, apple:0.05,grapes:2.0, tea: 5.0 , milk:8.0};
+prices = {orange:1.02, apple:0.05,grapes:2.0, coffee: 5.0 , bread:8.0};
 alert(a(basket,prices));
